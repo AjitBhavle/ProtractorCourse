@@ -1,0 +1,65 @@
+describe('Protractor Alert steps',function() {  
+official website: http://www.protractortest.org/#/api?view=ProtractorBy.prototype.buttonText 
+
+it('Open NonAngular js website Alerts',function() {
+
+//rahulonlinetutor@gmail.com
+
+browser.waitForAngularEnabled(false);
+
+browser.driver.manage().window().maximize();
+
+browser.get("http://qaclickacademy.com/practice.php");
+browser.switchTo().frame("courses-iframe");
+element(by.css("a[href*='sign_in']")).getText().then(function(text)
+{
+
+console.log(text);
+})
+
+})
+
+ 
+})
+//first parameter- Test suite name
+//Second parameter - function (function wil have all tests (it blocks)
+
+//first parameter- Test case  name
+
+
+npm init --- to create pkg.json
+npm install protractor
+npm install cucumber
+npm install --- scan the pkg.json file and install all dependencies
+npm run scriptValue
+ts --init ----to create tsconfig.json
+tsc --- to compile .ts files and create .js files
+node file.js --- execute js file 
+protractor js_configFile --- execute js_Configfile and different spec define in it
+Note: used chai Assertion library(should, expect and assert objects) and cucumber-extend-reporter 
+
+
+
+------------------------------Java Script------------------------
+var a= new car(); ---- create java script obj
+module.export=new car(); --- export obj to access it from other .js file
+
+var obj= required(./jsfile.js); --- this is call inheritance in js or access diff js file obj 
+
+beforeEach(function()
+{})
+
+afterEach(function()
+{})
+
+Onprepare: function(){
+
+//define gobal method or report config or browser.waitForAngularEnabled(false) or url or browser maximize
+
+}
+
+
+using(obj.dataDriver, function(data, description)
+{
+
+})

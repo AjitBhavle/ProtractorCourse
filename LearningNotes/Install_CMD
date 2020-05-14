@@ -1,0 +1,14 @@
+
+Install commands List
+Below are the mandatory commands for getting started
+
+npm install -g protractor
+
+webdriver-manager update
+
+webdriver manager start
+
+------If working on non-Angular use 
+
+browser.waitForAngularEnabled(false)
+browser.get("google.com")
